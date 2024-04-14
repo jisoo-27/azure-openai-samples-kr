@@ -38,7 +38,8 @@ GPT(Generative Pre-trained Transformer)는 OpenAI에서 개발한 LLM(Large Lang
 >별도의 프로그래밍 지식이 없더라도 나의 데이터를 조회하고 답변을 만들 수 있는 서비스를 만들 수 있습니다. 임베딩 되어 있는 Wikipedia 문서를 벡터DB에 색인화하고, Azure OpenAI의 On your data 기능으로 Playground에서 챗봇 서비스를 즉시 생성하는 방법을 설명합니다. OpenAI에서 제공하는 text-embedding-ada-002 API 기반으로 사전에 Wikipedia 정보를 Vector화 한 데이터의 일부분을 Azure AI Search 서비스에 인덱싱하고, Azure OpenAI Studio Playground 에서 on your data 로 연결하여 챗봇 서비스를 즉시 활용할 수 있는 방법을 다룹니다.
 
 - [LLMOps Prompt Flow 영상](https://youtu.be/ECl0D8rHoDc)
->LLMOps를 위한 도구인 Prompt Flow를 설명하고, 질문을 하면, 위 영상에서 색인화된 벡터DB를 조회하여 원하는 답변을 생성하는 RAG 기반의 API를 생성하고 테스트 하는 방법을 소개합니다. 
+>LLMOps를 위한 도구인 Prompt Flow를 설명하고, 질문을 하면, 위 영상에서 색인화된 벡터DB를 조회하여 원하는 답변을 생성하는 RAG 기반의 API를 생성하고 테스트 하는 방법을 소개합니다.
+원활한 실습을 위해서 https://github.com/HyounsooKim/promptflow-kr 리포지토리를 활용하는 것을 추천 드립니다. GitHub Codespace 기반으로 실습 환경을 구축하고 시작할 수 있습니다.
 
 ----
 
