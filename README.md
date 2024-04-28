@@ -1,6 +1,33 @@
 # GPT 기초, 사용 사례 및 샘플 솔루션 - 한국어 버전
-이 리포지토리에는 Azure OpenAI에서 제공하는 GPT(Generative Pre-trained Transformer)를 사용하는 기본 방법을 이해하고 샘플 솔루션을 및 다양한 사용 사례를 통해 이해에 도움이 되는 리소스가 포함되어 있습니다. 해당 리포지토리는 아래를 참고하고 있으며 한국 환경에 맞게 최적화 되어 있습니다.
-Original Repo: https://github.com/Azure/azure-openai-samples
+이 리포지토리에는 Azure OpenAI에서 제공하는 GPT(Generative Pre-trained Transformer)를 사용하는 기본 방법을 이해하고 샘플 솔루션을 및 다양한 사용 사례를 통해 이해에 도움이 되는 리소스가 포함되어 있습니다.  
+CodeSpace 환경을 통해서 개발 환경을 빠르게 시작할 수 있습니다.
+
+## Installation
+
+빠르게 시작하려면 사전 구축된 개발 환경을 사용할 수 있습니다.  
+**아래 버튼을 클릭**하여 GitHub Codespaces에서 저장소를 열고 readme를 계속 진행하세요!
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/HyounsooKim/azure-openai-samples-kr?quickstart=1)
+
+Python 개발을 위한 런타임 환경은 `python=3.11.4` 추천합니다.  
+위 버튼을 누르고 약 5~7분 후, .devcontainer에 정의된 환경 설정이 완료되면, 브라우저에 Visual Studio Code 형상이 표시됩니다.  
+
+.env.sample 파일을 .env로 복사한 후, API 키를 입력 합니다.  
+그리고 [빠른 실행](./quick_start/02_OpenAI_getting_started.ipynb)으로 이동하여 실습을 시작합니다.
+
+# Origin of the program
+이 Repository는 https://github.com/Azure/azure-openai-samples 에서 영감을 받고 만들었습니다.  
+이 교육 자료는 2023년 7월 `우아한형제들`의 생성형 AI 해커톤 대회인 [`우아톤 2023`](https://techblog.woowahan.com/13929/)을 기점으로 시작되었습니다.  
+2023년 5월 해당 Repository가 생성되었으며, 2023년 7월부터 2024년 4월까지 1,000명이 넘는 분들과 함께 프로그램이 진행되었습니다.  
+Origin Repo가 아닌 별도의 Repo로 분기한 이유는 한국 환경에 맞게 지속적으로 업데이트가 되면서 통합 보다 독립 시키는 것이 한국 고객에게 더 나을 것이라는 판단 때문입니다.  
+이 프로그램은 무료이며, 2일간의 Prompt Engineering Workshop 교육 이후, 별도 2~3일간의 해커톤(Hackathon)을 통해 Gen AI 기반의 MVP 모델을 빠르게 Prototyping 하는 것을 목표로 합니다.  
+[프로그램에 대한 소개 문서](http://azure.studydev.com/openai/aoai_2024_pe_00.pdf)를 통해서 행사 정보를 얻을 수 있습니다.
+
+# Customer
+Gen AI Workshop을 진행한 고객 중 공개된 회사에 대해서만 아래에 관련 정보를 기록합니다.  
+- 2023년 7월 우아한형제들 - [우아한형제들, 사내 해커톤 ‘우아톤 2023’ 진행](https://zdnet.co.kr/view/?no=20230717092217)  
+- 2024년 1월 Finda - [핀다, 한국MS와 사내 해커톤 '2024핀다톤' 개최](https://www.etnews.com/20240205000064)
+
 
 ## Update 정리
 >**Python 버전은 3.11.4, Azure OpenAI 버전은 1.13.3에서 실행하도록 코드를 수정하였습니다. - 2024-03-17**  
