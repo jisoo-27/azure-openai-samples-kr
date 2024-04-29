@@ -1,6 +1,8 @@
 # GPT 기초, 사용 사례 및 샘플 솔루션 - 한국어 버전
 이 리포지토리에는 Azure OpenAI에서 제공하는 GPT(Generative Pre-trained Transformer)를 사용하는 기본 방법을 이해하고 샘플 솔루션을 및 다양한 사용 사례를 통해 이해에 도움이 되는 리소스가 포함되어 있습니다.  
 
+AI Tour ["실전 RAG 정복하기" PDF 파일](http://azure.studydev.com/event/workshop_rag.pdf)을 공유 드립니다.
+
 ## 시작하기
 Codespace 환경을 통해서 개발 환경을 빠르게 시작할 수 있습니다.  
 **아래 버튼을 클릭**하여 GitHub Codespaces에서 저장소를 열어서 시작하세요!  
