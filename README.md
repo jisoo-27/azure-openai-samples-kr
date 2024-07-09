@@ -12,7 +12,7 @@ Codespace 환경을 통해서 개발 환경을 빠르게 시작할 수 있습니
 Python 실행을 위한 Runtime 환경은 `python=3.11.4` 추천합니다. 위 버튼을 누르고 약 7분이 경과되면, .devcontainer에 정의된 개발 환경 및 라이브러리 설치가 완료되며, 브라우저에 Visual Studio Code IDE가 표시됩니다.  
 
 ### 실습에 사용하는 GPT 버전
-현재 여기의 샘플은 주로 GPT 3.5를 기반으로 합니다. 일반적으로 gpt-35-turbo 최신 모델을 활용합니다. OpenAI의 모델 정책에 맞추어 Chat Completion API 기반으로 실습할 수 있습니다. gpt-35-turbo(0125) 모델 또는 gpt-4-turbo(0125-preview) 최신 모델을 활용하는 것을 추천 드립니다. (2024-03-17 기준)
+현재 여기의 샘플은 주로 GPT-4o를 기반으로 합니다. gpt-4o의 0513 버전에서 테스트 되었습니다. OpenAI의 모델 정책에 맞추어 Chat Completion API 기반으로 실습할 수 있습니다. gpt-35-turbo (0125) 모델 또는 gpt-4o (0513) 최신 모델을 활용하는 것을 추천 드립니다. (2024-07-01 기준)
 
 ### 설정하기
 >안전한 로컬 환경에서의 키관리를 위해 실습에 필요한 API Endpoint 또는 API Key는 ***.env*** 파일을 활용하는 것을 강력히 추천합니다. 예를 들어 [.env.sample](./.env.sample) 파일을 복사하여 `.env` 파일을 만들고 해당 API KEY 정보를 입력하여 사용합니다.
@@ -43,15 +43,18 @@ GPT(Generative Pre-trained Transformer)는 OpenAI에서 개발한 LLM(Large Lang
 - [(개발자) Prompt Engineering - Quick Start](./quick_start/): GPT 사용을 빠르게 시작할 수 있는 노트북 모음입니다.
 
 ## 실습 참고용 동영상
-이 워크샵은 스스로 학습할 수 있는 교육용 영상을 무료로 배포합니다. 해당 영상은 2024년 6월에 시리즈 형태로 정리하여 게재될 예정입니다.
+이 워크샵은 스스로 학습할 수 있는 교육용 영상을 무료로 배포합니다. 해당 영상은 2024년 9월에 시리즈 형태로 정리하여 게재될 예정입니다.
 - [코드 기반으로 알아보는 프롬프트 엔지니어링 기초](https://youtu.be/XQ917ZOaaOk)
 >Python 코드 기반으로 프롬프트 엔지니어링을 하는 방법을 소개합니다. 해당 영상은 Python Runtime 3.11.4, Azure OpenAI 1.13.3 버전의 환경에서 실행할 수 있도록 소스 코드(GitHub Repository)와 개발환경 세팅(DevContainer) 정보를 동시에 포함하고 있습니다. 빠른 개발환경을 위해서는 GitHub의 Codespace 기반으로 개발 환경을 구축하고, 웹브라우저 상에서 Visual Stduio Code IDE와 동일하게 개발하고 테스트 할 수 있습니다. 
 
-- [Retrieval Augmented Generation(RAG) 실습 소개 영상](https://youtu.be/XsqPjHYZD04)
+- [Wikipedia 정보를 Azure 에서 RAG 아키텍처로 구성하는 방법](https://youtu.be/MOOHK1b4Syk)
 >별도의 프로그래밍 지식이 없더라도 나의 데이터를 조회하고 답변을 만들 수 있는 서비스를 만들 수 있습니다. 임베딩 되어 있는 Wikipedia 문서를 벡터DB에 색인화하고, Azure OpenAI의 On your data 기능으로 Playground에서 챗봇 서비스를 즉시 생성하는 방법을 설명합니다. OpenAI에서 제공하는 text-embedding-ada-002 API 기반으로 사전에 Wikipedia 정보를 Vector화 한 데이터의 일부분을 Azure AI Search 서비스에 인덱싱하고, Azure OpenAI Studio Playground 에서 on your data 로 연결하여 챗봇 서비스를 즉시 활용할 수 있는 방법을 다룹니다.
 
-- [LLMOps Prompt Flow 영상](https://youtu.be/ECl0D8rHoDc)
->LLMOps를 위한 도구인 Prompt Flow를 설명하고, 질문을 하면, 위 영상에서 색인화된 벡터DB를 조회하여 원하는 답변을 생성하는 RAG 기반의 API를 생성하고 테스트 하는 방법을 소개합니다. Codespace 기반 실습을 위해서는 https://github.com/HyounsooKim/promptflow-kr (Legacy) 리포지토리를 활용할 수도 있습니다.
+- [LLMOps Prompt flow 영상](https://youtu.be/ECl0D8rHoDc)
+>LLMOps를 위한 도구인 Prompt flow를 설명하고, 질문을 하면, 위 영상에서 색인화된 벡터DB를 조회하여 원하는 답변을 생성하는 RAG 기반의 API를 생성하고 테스트 하는 방법을 소개합니다. Codespace 기반 실습을 위해서는 https://github.com/HyounsooKim/promptflow-kr (Legacy) 리포지토리를 활용할 수도 있습니다.
+
+- [Azure AI Studio의 Prompt flow를 활용한 RAG App 만들기](https://youtu.be/92_oxGaMXSY)
+>Azure AI Studio에서 LLMOps를 위한 도구인 Prompt flow를 활용하여, 위 영상에서 색인화된 벡터DB를 조회하여 원하는 답변을 생성하는 RAG 기반의 API를 생성하고 테스트 하는 방법을 소개합니다.
 
 ## 개발환경 선택하기
 >해당 실습을 원활하게 제공하기 위해서 .devcontainer 환경을 제공하고 있습니다. 나의 PC에 Docker나 IDE 설치를 원하지 않는다면, `Codespace`를 권장합니다. 
@@ -69,6 +72,7 @@ GPT(Generative Pre-trained Transformer)는 OpenAI에서 개발한 LLM(Large Lang
 `Gen AI Workshop & Hackathon` 을 진행한 고객 중 공개된 회사에 대해서만 아래에 관련 정보를 기록합니다.  
 - 2023-07: **우아한형제들** - [우아한형제들, 사내 해커톤 ‘우아톤 2023’ 진행](https://zdnet.co.kr/view/?no=20230717092217)  
 - 2024-01: **Finda** - [핀다, 한국MS와 사내 해커톤 '2024핀다톤' 개최](https://www.etnews.com/20240205000064)
+- 2024-07: **인터파크 트리플** [인터파크트리플, 사내 해커톤 '인트톤 2024' 진행](https://zdnet.co.kr/view/?no=20240705140508)
 
 ## Contributing
 We welcome contributions to this repository. If you have any ideas or suggestions, please feel free to open an issue or submit a pull request.
