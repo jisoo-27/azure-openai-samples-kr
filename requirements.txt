@@ -9,4 +9,4 @@ plotly==5.16.1
 matplotlib==3.7.2
 pandas==2.1.2
 azure-cognitiveservices-speech
-tiktoken==0.6.0
+tiktoken==0.7.0
