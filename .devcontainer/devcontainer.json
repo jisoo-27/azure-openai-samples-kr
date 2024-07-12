@@ -1,41 +1,25 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	"name": "Python 3",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
-	
-	// Features to add to the dev container. More info: https://containers.dev/features.
+	"name": "Prompt Engineering Hackathon with Azure OpenAI GPT",
+	"image": "mcr.microsoft.com/devcontainers/python:3.11",
 	"features": {
-		"ghcr.io/devcontainers/features/python:1": {
-			"installJupyterlab": true
-		},
-		"ghcr.io/devcontainers/features/azure-cli:1": {}
+	  "ghcr.io/devcontainers/features/python:1": {
+		"version": "3.11.4",
+		"installJupyterlab": true
+	  },
+	  "ghcr.io/devcontainers/features/azure-cli:1": {}
 	},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install --user -r requirements.txt",
 	"customizations": {
-		"codespaces": {
-			"openFiles": ["README.md"]
-		},
-		"vscode": {
-			"extensions": [
-				"ms-python.python",
-				"ms-toolsai.jupyter",
-				"GitHub.copilot"
-			]
-		}
+	  "codespaces": {
+		"openFiles": ["README.md"]
 	},
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
-
-	"runArgs": []
-}
+	  "vscode": {
+		"extensions": [
+		  "ms-python.python",
+		  "ms-toolsai.jupyter",
+		  "github.copilot"
+		]
+	  }
+	},
+	  "postCreateCommand": "pip3 install --user -r requirements.txt",
+	  "runArgs": []
+  }
